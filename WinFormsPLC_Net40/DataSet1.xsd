@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.WinFormsPLC_Net40.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="Devart.Data.SQLite" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewEquipment_PerformTableAdapter" GeneratorDataComponentClassName="ViewEquipment_PerformTableAdapter" Name="ViewEquipment_Perform" UserDataComponentName="ViewEquipment_PerformTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="&quot;main&quot;.ViewEquipment_Perform" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ItemCode, ItemName, PerformName, PerformContent, PerformReturn, PerformOrder, PerformEnable FROM "main".ViewEquipment_Perform</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ItemCode" DataSetColumn="ItemCode" />
+              <Mapping SourceColumn="ItemName" DataSetColumn="ItemName" />
+              <Mapping SourceColumn="PerformName" DataSetColumn="PerformName" />
+              <Mapping SourceColumn="PerformContent" DataSetColumn="PerformContent" />
+              <Mapping SourceColumn="PerformReturn" DataSetColumn="PerformReturn" />
+              <Mapping SourceColumn="PerformOrder" DataSetColumn="PerformOrder" />
+              <Mapping SourceColumn="PerformEnable" DataSetColumn="PerformEnable" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewEquipment_Perform" msprop:Generator_TableClassName="ViewEquipment_PerformDataTable" msprop:Generator_TableVarName="tableViewEquipment_Perform" msprop:Generator_TablePropName="ViewEquipment_Perform" msprop:Generator_RowDeletingName="ViewEquipment_PerformRowDeleting" msprop:Generator_RowChangingName="ViewEquipment_PerformRowChanging" msprop:Generator_RowEvHandlerName="ViewEquipment_PerformRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewEquipment_PerformRowDeleted" msprop:Generator_UserTableName="ViewEquipment_Perform" msprop:Generator_RowChangedName="ViewEquipment_PerformRowChanged" msprop:Generator_RowEvArgName="ViewEquipment_PerformRowChangeEvent" msprop:Generator_RowClassName="ViewEquipment_PerformRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" msprop:Generator_UserColumnName="ItemCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemName" msprop:Generator_ColumnVarNameInTable="columnItemName" msprop:Generator_ColumnPropNameInRow="ItemName" msprop:Generator_ColumnPropNameInTable="ItemNameColumn" msprop:Generator_UserColumnName="ItemName" type="xs:string" minOccurs="0" />
+              <xs:element name="PerformName" msprop:Generator_ColumnVarNameInTable="columnPerformName" msprop:Generator_ColumnPropNameInRow="PerformName" msprop:Generator_ColumnPropNameInTable="PerformNameColumn" msprop:Generator_UserColumnName="PerformName" type="xs:string" minOccurs="0" />
+              <xs:element name="PerformContent" msprop:Generator_ColumnVarNameInTable="columnPerformContent" msprop:Generator_ColumnPropNameInRow="PerformContent" msprop:Generator_ColumnPropNameInTable="PerformContentColumn" msprop:Generator_UserColumnName="PerformContent" type="xs:string" minOccurs="0" />
+              <xs:element name="PerformReturn" msprop:Generator_ColumnVarNameInTable="columnPerformReturn" msprop:Generator_ColumnPropNameInRow="PerformReturn" msprop:Generator_ColumnPropNameInTable="PerformReturnColumn" msprop:Generator_UserColumnName="PerformReturn" type="xs:string" minOccurs="0" />
+              <xs:element name="PerformOrder" msprop:Generator_ColumnVarNameInTable="columnPerformOrder" msprop:Generator_ColumnPropNameInRow="PerformOrder" msprop:Generator_ColumnPropNameInTable="PerformOrderColumn" msprop:Generator_UserColumnName="PerformOrder" type="xs:int" minOccurs="0" />
+              <xs:element name="PerformEnable" msprop:Generator_ColumnVarNameInTable="columnPerformEnable" msprop:Generator_ColumnPropNameInRow="PerformEnable" msprop:Generator_ColumnPropNameInTable="PerformEnableColumn" msprop:Generator_UserColumnName="PerformEnable" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
